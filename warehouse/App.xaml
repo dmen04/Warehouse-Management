@@ -1,0 +1,53 @@
+﻿<Application x:Class="warehouse.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:warehouse"
+             xmlns:vm="clr-namespace:warehouse.ViewModels"
+             xmlns:v="clr-namespace:warehouse.Views"
+             StartupUri="LoginWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type vm:HomeViewModel}">
+            <v:HomeView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AddItemViewModel}">
+            <v:AddItemView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:InventoryViewModel}">
+            <v:InventoryView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AddCategoryViewModel}">
+            <v:AddCategoryView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:CategoriesViewModel}">
+            <v:CategoriesView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AddStockViewModel}">
+            <v:AddStockView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:ShelvesViewModel}">
+            <v:ShelvesView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:TransfersViewModel}">
+            <v:TransfersView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:UserManagementViewModel}">
+            <v:UserManagementView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:AddShelfViewModel}">
+            <v:AddShelfView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:StockViewModel}">
+            <v:StockView/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
